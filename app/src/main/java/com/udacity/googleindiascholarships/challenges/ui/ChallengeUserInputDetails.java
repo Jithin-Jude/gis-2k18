@@ -160,7 +160,7 @@ public class ChallengeUserInputDetails extends AppCompatActivity {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     Toast.makeText(ChallengeUserInputDetails.this,"Upload Succesfull",Toast.LENGTH_LONG).show();
 
-                    Upload upload = new Upload(mName.getText().toString().trim(),taskSnapshot.getDownloadUrl().toString());
+                    Upload upload = new Upload(mName.getText().toString().trim(),taskSnapshot.getUploadSessionUri().toString());
                     String uploadId = mDatabaseReference.push().getKey();
                     mDatabaseReference.child(uploadId).setValue(upload);
 

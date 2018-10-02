@@ -55,7 +55,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactC
         final ContactModerator listItem = mListItems.get(position);
 
        // holder.contactImageView.setImageResource(listItem.getPlaceHolderImage());
-        Picasso.with(mContext).load(listItem.getMod_profile()).into(holder.contactImageView);
+        Picasso.get().load(listItem.getMod_profile()).into(holder.contactImageView);
 
     }
 
@@ -97,7 +97,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactC
                     CircleImageView githubLink = itemView.findViewById(R.id.contact_github);
                     TextView emailGis = itemView.findViewById(R.id.gisMailId);
 
-                    Picasso.with(mContext).load(mListItems.get(position).getMod_profile()).into(profileImage);
+                    Picasso.get().load(mListItems.get(position).getMod_profile()).into(profileImage);
                     contact_name.setText(mListItems.get(position).getMod_name());
                     contact_title.setText(mListItems.get(position).getMod_title());
 

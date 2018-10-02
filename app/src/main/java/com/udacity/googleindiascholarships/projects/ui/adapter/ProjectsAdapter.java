@@ -40,7 +40,7 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.Projec
         final Project listItem = mListItems.get(position);
         holder.projectNameTextView.setText(listItem.getProject_name());
         //holder.projectImageView.setImageResource(listItem.getPlaceHolderImage());
-        Picasso.with(mContext).load(listItem.getProject_logo_url()).into(holder.projectImageView);
+        Picasso.get().load(listItem.getProject_logo_url()).into(holder.projectImageView);
 
     }
 

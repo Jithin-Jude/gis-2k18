@@ -93,8 +93,8 @@ public class ProjectDetails extends AppCompatActivity implements View.OnClickLis
         mProjectName.setText(project_name);
         mProjectDescription.setText(project_description);
         mProjectStatus.setText(project_status);
-        Picasso.with(this).load(project_logo_url).into(mPorjectLogoImageView);
-        Picasso.with(this).load(project_logo_url).into(mainLogoImageView);
+        Picasso.get().load(project_logo_url).into(mPorjectLogoImageView);
+        Picasso.get().load(project_logo_url).into(mainLogoImageView);
        // mProjectColapsingToolbarLayout.set
         githubUri = Uri.parse(project_github_url);
         mGithubLinkButton.setOnClickListener(new View.OnClickListener() {

@@ -91,7 +91,7 @@ public class CustomDialog extends Dialog implements View.OnClickListener{
                     previewTitle.setVisibility(View.VISIBLE);
                     linkSharedBy.setVisibility(View.VISIBLE);
                     if(size>0)
-                        Picasso.with(context).load(sourceContent.getImages().get(random.nextInt(size))).into(previewImage);
+                        Picasso.get().load(sourceContent.getImages().get(random.nextInt(size))).into(previewImage);
                     previewThumbnail.setVisibility(View.VISIBLE);
                     previewImage.setVisibility(View.VISIBLE);
                     openBtn.setVisibility(View.VISIBLE);

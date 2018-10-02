@@ -31,7 +31,7 @@ public class AnnouncementsRecyclerViewAdapter extends RecyclerView.Adapter<Annou
 
     @Override
     public void onBindViewHolder(AnnouncementsViewHolder holder, int position) {
-        Picasso.with(mContext).load(R.drawable.akshit).
+        Picasso.get().load(R.drawable.akshit).
                 into(holder.announcementsThumbnail);
     }
 

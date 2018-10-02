@@ -40,7 +40,7 @@ public class BlogsRecyclerViewAdapter extends RecyclerView.Adapter<BlogsRecycler
 
     @Override
     public void onBindViewHolder(final BlogsViewHolder holder, int position) {
-        Picasso.with(mContext).load(blogImageURL).into(holder.thumbnailImage);
+        Picasso.get().load(blogImageURL).into(holder.thumbnailImage);
         holder.share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
